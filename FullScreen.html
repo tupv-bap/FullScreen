@@ -63,7 +63,7 @@
     }
 
     function activateFullScreen() {
-      var canvas = document.getElementById("myCanvas"); // Thay thế bằng ID thực của canvas của bạn
+      var canvas = document.getElementById("myVideo"); // Thay thế bằng ID thực của canvas của bạn
 
       if (canvas.webkitEnterFullscreen) {
         // Safari
@@ -85,6 +85,11 @@
   <p>Note: Internet Explorer 10 and earlier versions do not support the msRequestFullscreen() method.</p>
   <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
   </canvas>
+  <video id="myVideo" width="400" controls>
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
 </body>
 
 </html>
