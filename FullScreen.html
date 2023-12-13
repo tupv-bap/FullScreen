@@ -63,22 +63,22 @@
     }
 
     function activateFullScreen() {
-      var canvas = document.getElementById("myVideo"); // Thay thế bằng ID thực của canvas của bạn
-      canvas.webkitEnterFullscreen();
-      canvas.webkitEnterFullScreen();
-      if (canvas.webkitEnterFullscreen) {
-        // Safari
-        canvas.webkitEnterFullscreen();
-      } else if (canvas.mozRequestFullScreen) {
-        // Firefox
-        canvas.mozRequestFullScreen();
-      } else if (canvas.msRequestFullscreen) {
-        // IE/Edge
-        canvas.msRequestFullscreen();
-      } else if (canvas.requestFullscreen) {
-        // Standard
-        canvas.requestFullscreen();
-      }
+      //var canvas = document.getElementById("myVideo"); // Thay thế bằng ID thực của canvas của bạn
+      document.getElementById("myCanvas").webkitRequestFullscreen()
+
+      // if (canvas.webkitEnterFullscreen) {
+      //   // Safari
+      //   canvas.webkitEnterFullscreen();
+      // } else if (canvas.mozRequestFullScreen) {
+      //   // Firefox
+      //   canvas.mozRequestFullScreen();
+      // } else if (canvas.msRequestFullscreen) {
+      //   // IE/Edge
+      //   canvas.msRequestFullscreen();
+      // } else if (canvas.requestFullscreen) {
+      //   // Standard
+      //   canvas.requestFullscreen();
+      // }
     }
   
   document.getElementById("p1").innerHTML = document.documentElement.allowFullscreen;
