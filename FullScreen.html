@@ -80,12 +80,21 @@
         canvas.requestFullscreen();
       }
     }
-
+  
+  document.getElementById("p1").innerHTML = document.documentElement.allowFullscreen;
+  document.getElementById("p2").innerHTML = document.getElementById("MyIframe").allowFullscreen;
+  document.getElementById("p3").innerHTML = document.getElementById("myCanvas").allowFullscreen;
+  document.getElementById("p4").innerHTML = document.getElementById("myVideo").allowFullscreen;
+  
   </script>
-
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
   <p>Note: Internet Explorer 10 and earlier versions do not support the msRequestFullscreen() method.</p>
   <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
   </canvas>
+  <iframe id="MyIframe"src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
   <video id="myVideo" width="400" controls>
     <source src="mov_bbb.mp4" type="video/mp4">
     <source src="mov_bbb.ogg" type="video/ogg">
