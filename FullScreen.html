@@ -64,7 +64,8 @@
 
     function activateFullScreen() {
       var canvas = document.getElementById("myVideo"); // Thay thế bằng ID thực của canvas của bạn
-
+      canvas.webkitEnterFullscreen();
+      canvas.webkitEnterFullScreen();
       if (canvas.webkitEnterFullscreen) {
         // Safari
         canvas.webkitEnterFullscreen();
